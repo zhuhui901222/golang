@@ -20,7 +20,7 @@ func main() {
 		fmt.Printf("Link found: %q -> %s\n", e.Text, link)
 		// Visit link found on page
 		// Only those links are visited which are in AllowedDomains
-		//c.Visit(e.Request.AbsoluteURL(link))
+		c.Visit(e.Request.AbsoluteURL(link))
 	})
 
 	// Before making a request print "Visiting ..."

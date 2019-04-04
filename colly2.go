@@ -33,7 +33,7 @@ func main() {
 	})
 
 	// Start scraping on https://en.wikipedia.org
-	c.Visit("https://en.wikipedia.org/")
+	c.Visit("http://www.imooc.com/u/4676750/courses")
 	// Wait until threads are finished
 	c.Wait()
 }

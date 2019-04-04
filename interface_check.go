@@ -34,11 +34,11 @@ func (*Teacher)speak(){
 }
 
 
-func (p Teacher) CalculateSalary() int {
+func (p *Teacher) CalculateSalary() int {
 	return p.basicpay + p.jj
 }
 
-func (c Student) CalculateSalary() int {
+func (c *Student) CalculateSalary() int {
 	return c.basicpay
 }
 
