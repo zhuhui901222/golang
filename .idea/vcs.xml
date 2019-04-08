@@ -3,11 +3,13 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/Unknwon/com" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/Unknwon/goconfig" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/beego/bee" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/davyxu/golog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/davyxu/tabtoy" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/deuill/go-php" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gpmgo/gopm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/smartystreets/goconvey" vcs="Git" />
   </component>
 </project>

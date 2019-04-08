@@ -11,9 +11,12 @@ func main() {
 	c := colly.NewCollector(
 		// MaxDepth is 2, so only the links on the scraped page
 		// and links on those pages are visited
-		colly.MaxDepth(2),
+	//
 		colly.Async(true),
 	)
+
+
+	c.AllowedDomains = []string{"www.lagou.com"}
 
 	// Limit the maximum parallelism to 2
 	// This is necessary if the goroutines are dynamically
@@ -21,7 +24,7 @@ func main() {
 	//
 	// Parallelism can be controlled also by spawning fixed
 	// number of go routines.
-	c.Limit(&colly.LimitRule{DomainGlob: "*", Parallelism: 2})
+//	c.Limit(&colly.LimitRule{DomainGlob: "*", Parallelism: 2})
 
 	// On every a element which has href attribute call callback
 	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
@@ -33,7 +36,7 @@ func main() {
 	})
 
 	// Start scraping on https://en.wikipedia.org
-	c.Visit("http://www.imooc.com/u/4676750/courses")
+	c.Visit("https://www.lagou.com")
 	// Wait until threads are finished
 	c.Wait()
 }
