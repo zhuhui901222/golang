@@ -1,9 +1,11 @@
 package controllers
 
 import (
-	"my-api/app/models"
 	"encoding/json"
+	"fmt"
 	"my-api/app/common/controller"
+	"my-api/app/models"
+	"my-api/app/pool"
 )
 
 // Operations about object
@@ -53,6 +55,14 @@ func (o *ObjectController) Get() {
 // @Failure 403 :objectId is empty
 // @router / [get]
 func (o *ObjectController) GetAll() {
+	mysql:=pool.GetOrm()
+	session:=mysql.NewSession()
+	res,err := session.Table("users").First()
+	if err!=nil{
+		fmt.Println("db.Table  err:",err)
+		return
+	}
+	fmt.Println(res)
 	obs := models.GetAll()
 	o.Data["json"] =map[string]interface{}{"code": 200,"msg": "成功","data": obs}
 	o.ServeJSON()

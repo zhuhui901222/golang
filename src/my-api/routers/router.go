@@ -12,7 +12,7 @@ import (
 
 	"github.com/astaxie/beego"
 
-	_"my-api/app/common/middleware"
+//	_"my-api/app/common/middleware"
 )
 
 
@@ -20,8 +20,6 @@ import (
 
 
 func init() {
-
-
 	ns := beego.NewNamespace("/v1",
 		beego.NSNamespace("/object",
 			beego.NSInclude(
