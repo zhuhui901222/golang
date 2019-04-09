@@ -1,9 +1,8 @@
 package controller
 
 import (
-	"fmt"
 	"github.com/astaxie/beego"
-	_"log"
+	_ "log"
 )
 
 // Operations about object
@@ -12,13 +11,9 @@ type ApiController struct {
 }
 
 func init() {
-	o:=ApiController{}
-	response:=o.getParam()
-	fmt.Println()
+
+
 }
 
-func (o *ApiController)getParam() map[interface{}]interface{}{
-	return o.Data
-}
 
 

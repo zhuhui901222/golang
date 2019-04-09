@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d08fdad-0503-4319-89e0-d902bba74c9f" name="Default Changelist" comment="2">
-      <change afterPath="$PROJECT_DIR$/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my-api/app/common/controller/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my-api/app/common/helpers/function.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my-api/app/common/model/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my-api/conf/database.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisPool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/my-api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/my-api.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colly2.go" beforeDir="false" afterPath="$PROJECT_DIR$/colly2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gpmgo/gopm" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gpmgo/gopm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/.bra.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/.bra.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/.gitignore" afterDir="false" />
@@ -58,6 +51,7 @@
       <change beforePath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/modules/goconfig/write.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/modules/goconfig/write.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/modules/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/modules/log/log.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/modules/setting/setting.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gpmgo/gopm/modules/setting/setting.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey/.travis.yml" beforeDir="false" />
@@ -199,18 +193,7 @@
       <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey/web/server/watch/integration_testing/sub/sub.goconvey" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey/web/server/watch/util_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/smartystreets/goconvey/web/server/watch/watch.goconvey" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/controllers/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/app/controllers/object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/app/controllers/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/lastupdate.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/models/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/app/models/object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/app/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/my-api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/my-api.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/my-api.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/routers/commentsRouter_______Go_src_my-api_controllers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/routers/commentsRouter_controllers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my-api/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myapp/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myapp/myapp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/myapp/myapp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-api/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +269,7 @@
         <entry file="file://$PROJECT_DIR$/mysql.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="43" />
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="e#14#60#0" expanded="true" />
               </folding>
@@ -309,8 +292,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pool.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="197" column="17" lean-forward="true" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="17" />
+            <state relative-caret-position="100">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+              <folding>
+                <element signature="e#14#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="584" column="14" selection-start-line="584" selection-start-column="14" selection-end-line="584" selection-end-column="14" />
+              <folding>
+                <element signature="e#15#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redisPool.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
+              <folding>
+                <element signature="e#15#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -339,8 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/json.go" />
-        <option value="$PROJECT_DIR$/func.go" />
         <option value="$PROJECT_DIR$/func_return.go" />
         <option value="$PROJECT_DIR$/reflect.go" />
         <option value="$PROJECT_DIR$/map.go" />
@@ -390,12 +398,14 @@
         <option value="$PROJECT_DIR$/colly2.go" />
         <option value="$PROJECT_DIR$/mysql.go" />
         <option value="$PROJECT_DIR$/pool.go" />
+        <option value="$PROJECT_DIR$/redisPool.go" />
+        <option value="$PROJECT_DIR$/tree.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="216" />
-    <option name="y" value="88" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="266" />
+    <option name="y" value="112" />
     <option name="width" value="1071" />
     <option name="height" value="725" />
   </component>
@@ -441,7 +451,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/my-api" />
     <property name="settings.editor.selected.configurable" value="goland.project.structure" />
   </component>
   <component name="RecentsManager">
@@ -466,20 +476,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build pool.go">
+  <component name="RunManager" selected="Go Build.go build tree.go">
     <configuration name="go build colly2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/colly2.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build colly5.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/colly5.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -507,22 +509,30 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build tree.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/tree.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build tree.go" />
         <item itemvalue="Go Build.go build pool.go" />
         <item itemvalue="Go Build.go build mysql.go" />
         <item itemvalue="Go Build.go build colly2.go" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build colly5.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="266" y="112" width="1071" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26647565" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.36795253" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32864675" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -531,7 +541,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.21159029" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49856734" visible="true" weight="0.287062" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49856734" weight="0.3604061" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -551,23 +561,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/my-api/app/controllers/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my-api/app/models/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#16#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/my-api/routers/router.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -858,7 +851,7 @@
     <entry file="file://$PROJECT_DIR$/mysql.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="43" />
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="e#14#60#0" expanded="true" />
           </folding>
@@ -875,10 +868,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redisPool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
+          <folding>
+            <element signature="e#15#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="584" column="14" selection-start-line="584" selection-start-column="14" selection-end-line="584" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pool.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="197" column="17" lean-forward="true" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="17" />
+        <state relative-caret-position="100">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding>
+            <element signature="e#14#97#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
