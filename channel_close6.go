@@ -3,16 +3,19 @@ package main
 
 type T int
 
+
+//closed 1成功发送 0异常，发送失败
 func SafeSend(ch chan T, value T) (closed bool) {
 	defer func() {
 		if recover() != nil {
-			closed = true
+			closed = false
 		}
 	}()
 	ch <- value
-	return false
+	return true
 }
 
+//closed 1成功关闭 0异常 已关闭
 func SafeClose(ch chan T) (closed bool) {
 	defer func() {
 		if recover() != nil {
@@ -26,7 +29,6 @@ func SafeClose(ch chan T) (closed bool) {
 func main()  {
 	c1:=make(chan T ,1)
 	SafeSend(c1,2434)
-
 	SafeClose(c1)
 
 }

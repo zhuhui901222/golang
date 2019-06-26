@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	_ "myapp/middleware"
 )
 
 type MainController struct {

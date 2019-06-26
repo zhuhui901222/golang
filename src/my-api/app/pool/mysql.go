@@ -1,7 +1,6 @@
 package pool
 
 import (
-	"fmt"
 	"github.com/gohouse/gorose"
 	"sync"
 )
@@ -14,20 +13,18 @@ func GetOrm()(*gorose.Connection,error){
 	return DataBase,nil
 }
 
-var mu sync.Mutex
+var once sync.Once
 var instance *gorose.Connection
 
 func GetInstance()(*gorose.Connection,error){
-	mu.Lock()                    // <--- Unnecessary locking if instance already created
-	defer mu.Unlock()
+	var err error
 	if instance==nil{
-		var err error
-		instance,err=NewConn()
-		if err != nil{
-			return nil,err
-		}
+		once.Do(func() {
+			instance,err=NewConn()
+		})
 	}
-	return instance,nil
+	return instance,err
+
 }
 
 //用于创建连接资源
@@ -50,13 +47,12 @@ func NewConn()(*gorose.Connection,error){
 }
 
 
-func main() {
-	session:=GetOrm()
-	res,err := session.Table("users").First()
-	if err!=nil{
-		fmt.Println("db.Table  err:",err)
-		return
-	}
-	fmt.Println(res)
-
-}
+//func main() {
+//	session,err:=GetOrm()
+//	res,err := session.Table("user").First()
+//	if err!=nil{
+//		fmt.Println("db.Table  err:",err)
+//		return
+//	}
+//	fmt.Println(res)
+//}

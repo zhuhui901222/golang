@@ -42,14 +42,8 @@ func main() {
 				select {
 				case <-stopCh:
 					return
-				default:
-
-				}
-
-				select {
-				case <-stopCh:
-					return
 				case dataCh <- value:
+				default:
 
 				}
 			}

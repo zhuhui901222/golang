@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"my-api/app/common/controller"
 	"my-api/app/models"
+	"my-api/app/models/common"
 	"my-api/app/pool"
 )
 
@@ -55,7 +56,12 @@ func (o *ObjectController) Get() {
 // @Failure 403 :objectId is empty
 // @router / [get]
 func (o *ObjectController) GetAll() {
-	mysql:=pool.GetOrm()
+	common.GetOrm()
+	mysql,err:=pool.GetOrm()
+	if err!=nil{
+		fmt.Println("pool.GetOrm  err:",err)
+		return
+	}
 	session:=mysql.NewSession()
 	res,err := session.Table("users").First()
 	if err!=nil{

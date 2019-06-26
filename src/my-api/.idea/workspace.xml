@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b82cda3f-7aa6-41ec-89a3-2e2824bcd8b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/pool/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/my-api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/my-api.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/gpmgo/gopm" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/gpmgo/gopm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/smartystreets/goconvey" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/smartystreets/goconvey" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/lastupdate.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/my-api.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pool/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pool/mysql.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routers/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="275">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -58,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/object.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-65">
-              <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+            <state relative-caret-position="360">
+              <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
               <folding>
                 <element signature="e#21#101#0" expanded="true" />
               </folding>
@@ -73,12 +66,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pool/mysql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" lean-forward="true" selection-start-line="18" selection-end-line="31" />
+            <state relative-caret-position="486">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#14#62#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/sync/once.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-525" />
           </provider>
         </entry>
       </file>
@@ -151,15 +151,15 @@
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/app/pool.go" />
         <option value="$PROJECT_DIR$/app/pool/redis.go" />
-        <option value="$PROJECT_DIR$/app/controllers/object.go" />
-        <option value="$PROJECT_DIR$/app/pool/mysql.go" />
         <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/app/pool/mysql.go" />
+        <option value="$PROJECT_DIR$/app/controllers/object.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="474" />
-    <option name="y" value="94" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="78" />
+    <option name="y" value="53" />
     <option name="width" value="1137" />
     <option name="height" value="740" />
   </component>
@@ -260,10 +260,9 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="78" y="53" width="1137" height="740" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20487106" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26555246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -435,6 +434,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/pool/redis.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1583">
@@ -445,30 +451,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/object.go">
+    <entry file="file://C:/Go/src/sync/once.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
-          <folding>
-            <element signature="e#21#101#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-525" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pool/mysql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" lean-forward="true" selection-start-line="18" selection-end-line="31" />
+        <state relative-caret-position="486">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding>
             <element signature="e#14#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routers/router.go">
+    <entry file="file://$PROJECT_DIR$/app/controllers/object.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding>
+            <element signature="e#21#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

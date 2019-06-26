@@ -35,6 +35,7 @@ func main() {
 			if d == 9999 {
 				fmt.Println("当在接收端接收到9999时告诉发送端不要发送了")
 				close(stopCh)
+				close(dataCh)
 				return
 			}
 		} else {

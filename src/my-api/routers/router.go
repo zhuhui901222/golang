@@ -15,10 +15,6 @@ import (
 //	_"my-api/app/common/middleware"
 )
 
-
-
-
-
 func init() {
 	ns := beego.NewNamespace("/v1",
 		beego.NSNamespace("/object",

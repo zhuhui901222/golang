@@ -11,5 +11,6 @@
     <mapping directory="$PROJECT_DIR$/src/github.com/deuill/go-php" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gpmgo/gopm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/smartystreets/goconvey" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/streadway/amqp" vcs="Git" />
   </component>
 </project>
